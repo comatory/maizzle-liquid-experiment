@@ -11,6 +11,15 @@
   **LiquidJS starter**
 </div>
 
+## The problem
+
+The template at `./emails/transactional.html` uses `defaultImageUrl` data that we need to render literally. However the URL following `default:` ends up being rendered with `&quot;` instead of `"`.
+
+1. Clone the repo
+2. Run `npm install`
+3. Run `npm run build`
+4. Look at output in `./build_production/emails/transactional.html`, and check the URL following `default:`
+
 ## Getting Started
 
 This starter shows how to use [LiquidJS](https://liquidjs.com/) with Maizzle.
